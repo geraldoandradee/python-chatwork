@@ -17,8 +17,25 @@ Installation
    python setup.py install
 
 
+Usage
+-----
+
+
+.. code:: python
+
+   >>> import chatwork
+
+   >>> # 1. 初期化
+   >>> user = chatwork.ChatworkUser('user_api_token')
+
+   >>> # 2. ユーザ情報取得
+   >>> data = user.me()
+   >>> data['account_id']
+   123
+
+
 Official Links
 --------------
 
 * Chatwork : http://www.chatwork.com/
-* Chatwork API : http://developer.chatwork.com/ja/index.html 
+* Chatwork API : http://developer.chatwork.com/ja/index.html
