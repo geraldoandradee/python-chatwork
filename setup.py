@@ -36,14 +36,16 @@ class PyTest(TestCommand):
 
 here = os.path.abspath(os.path.dirname(__file__))
 sys.path.append(here)
+import chatwork
+
 
 with codecs.open(os.path.join(here, 'README.rst'), encoding='utf-8') as f:
     README = f.read()
 
 setup(
     name='python-chatwork',
-    version='0.0.1',
-    description='python chatwork-api client library',
+    version=chatwork.__version__,
+    description=chatwork.__doc__,
     long_description=README + '\n\n',
     classifiers=[
         'Programming Language :: Python',
