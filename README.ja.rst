@@ -26,11 +26,11 @@ Usage
    >>> import chatwork
 
    >>> # 1. 初期化
-   >>> user = chatwork.ChatworkUser('user_api_token')
+   >>> api = chatwork.ChatworkApi('user_api_token')
 
    >>> # 2. ユーザ情報取得
-   >>> data = user.me()
-   >>> data['account_id']
+   >>> user = api.me()
+   >>> user['account_id']
    123
 
 
